@@ -38,7 +38,7 @@ router.get("/student/:id", async (req, res) => {
     if (!result) res.send("Not found").status(404)
     else res.send(result).status(200)
 })
-
+//hello world
 router.get("/class/:id", async (req, res) => {
     let collection = await db.collection("grades")
     let query = {class_id: Number(req.params.id)}
